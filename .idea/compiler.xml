@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for streamreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="streamreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for mongodbwriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="mongodbwriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for hdfsreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="hdfsreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for ocswriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ocswriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for plugin-rdbms-util" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="plugin-rdbms-util" />
+      </profile>
+      <profile default="false" name="Annotation profile for ftpreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ftpreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for osswriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="osswriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for mysqlwriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="mysqlwriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for plugin-unstructured-storage-util" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="plugin-unstructured-storage-util" />
+      </profile>
+      <profile default="false" name="Annotation profile for hbasereader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="hbasereader" />
+      </profile>
+      <profile default="false" name="Annotation profile for sqlserverreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="sqlserverreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for drdswriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="drdswriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for postgresqlwriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="postgresqlwriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for otswriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="otswriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for odpsreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="odpsreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for postgresqlreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="postgresqlreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for datax-core" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="datax-core" />
+      </profile>
+      <profile default="false" name="Annotation profile for txtfilewriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="txtfilewriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for adswriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="adswriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for oraclereader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="oraclereader" />
+      </profile>
+      <profile default="false" name="Annotation profile for streamwriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="streamwriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for otsreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="otsreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for drdsreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="drdsreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for ossreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ossreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for hdfswriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="hdfswriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for txtfilereader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="txtfilereader" />
+      </profile>
+      <profile default="false" name="Annotation profile for oraclewriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="oraclewriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for sqlserverwriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="sqlserverwriter" />
+      </profile>
+      <profile default="false" name="Annotation profile for mongodbreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="mongodbreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for mysqlreader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="mysqlreader" />
+      </profile>
+      <profile default="false" name="Annotation profile for datax-common" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="datax-common" />
+      </profile>
+      <profile default="false" name="Annotation profile for odpswriter" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="odpswriter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="adswriter" target="1.6" />
+      <module name="DataX" target="1.6" />
+      <module name="datax-common" target="1.6" />
+      <module name="datax-core" target="1.6" />
+      <module name="drdsreader" target="1.6" />
+      <module name="drdswriter" target="1.6" />
+      <module name="ftpreader" target="1.6" />
+      <module name="hbasereader" target="1.6" />
+      <module name="hdfsreader" target="1.6" />
+      <module name="hdfswriter" target="1.6" />
+      <module name="mongodbreader" target="1.6" />
+      <module name="mongodbwriter" target="1.6" />
+      <module name="mysqlreader" target="1.6" />
+      <module name="mysqlwriter" target="1.6" />
+      <module name="ocswriter" target="1.6" />
+      <module name="odpsreader" target="1.6" />
+      <module name="odpswriter" target="1.6" />
+      <module name="oraclereader" target="1.6" />
+      <module name="oraclewriter" target="1.6" />
+      <module name="ossreader" target="1.6" />
+      <module name="osswriter" target="1.6" />
+      <module name="otsreader" target="1.6" />
+      <module name="otswriter" target="1.6" />
+      <module name="plugin-rdbms-util" target="1.6" />
+      <module name="plugin-unstructured-storage-util" target="1.6" />
+      <module name="postgresqlreader" target="1.6" />
+      <module name="postgresqlwriter" target="1.6" />
+      <module name="sqlserverreader" target="1.6" />
+      <module name="sqlserverwriter" target="1.6" />
+      <module name="streamreader" target="1.6" />
+      <module name="streamwriter" target="1.6" />
+      <module name="txtfilereader" target="1.6" />
+      <module name="txtfilewriter" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
