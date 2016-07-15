@@ -241,6 +241,13 @@
         <processorPath useClasspath="true" />
         <module name="odpswriter" />
       </profile>
+      <profile default="false" name="Annotation profile for sybasereader" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="sybasereader" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="adswriter" target="1.6" />
@@ -274,6 +281,7 @@
       <module name="sqlserverwriter" target="1.6" />
       <module name="streamreader" target="1.6" />
       <module name="streamwriter" target="1.6" />
+      <module name="sybasereader" target="1.6" />
       <module name="txtfilereader" target="1.6" />
       <module name="txtfilewriter" target="1.6" />
     </bytecodeTargetLevel>

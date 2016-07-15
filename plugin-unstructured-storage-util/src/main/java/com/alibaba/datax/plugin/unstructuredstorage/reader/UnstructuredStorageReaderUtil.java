@@ -468,8 +468,8 @@ public class UnstructuredStorageReaderUtil {
 	
 		// encoding check
 		 String encoding = readerConfiguration.getUnnecessaryValue(
-					com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
-					com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING,null);
+					Key.ENCODING,
+					Constant.DEFAULT_ENCODING,null);
 		 try {
              encoding = encoding.trim();
              readerConfiguration.set(Key.ENCODING, encoding);
@@ -484,7 +484,7 @@ public class UnstructuredStorageReaderUtil {
 		 
 		 //only support compress types
 		 String compress =readerConfiguration
-					.getUnnecessaryValue(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS,null,null);
+					.getUnnecessaryValue(Key.COMPRESS,null,null);
 			if(compress != null){
 				compress = compress.toLowerCase().trim();
 				boolean compressTag = "gzip".equals(compress) || "bzip2".equals(compress);
@@ -493,14 +493,14 @@ public class UnstructuredStorageReaderUtil {
 							String.format("仅支持 gzip, bzip2 文件压缩格式 , 不支持您配置的文件压缩格式: [%s]", compress));
 				}
 			}		
-			readerConfiguration.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COMPRESS, compress);
+			readerConfiguration.set(Key.COMPRESS, compress);
 			
 			//fieldDelimiter check
-			String delimiterInStr = readerConfiguration.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER,null);
+			String delimiterInStr = readerConfiguration.getString(Key.FIELD_DELIMITER,null);
 			if(null == delimiterInStr){
 				throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.REQUIRED_VALUE,
 						String.format("您提供配置文件有误，[%s]是必填参数.",
-								com.alibaba.datax.plugin.unstructuredstorage.reader.Key.FIELD_DELIMITER));
+								Key.FIELD_DELIMITER));
 			}else if(1 != delimiterInStr.length()){
 				// warn: if have, length must be one
 				throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.ILLEGAL_VALUE,
@@ -510,7 +510,7 @@ public class UnstructuredStorageReaderUtil {
 			// column: 1. index type 2.value type 3.when type is Date, may have
 			// format
 			List<Configuration> columns = readerConfiguration
-					.getListConfiguration(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN);
+					.getListConfiguration(Key.COLUMN);
 			if (null == columns || columns.size() == 0) {
 				throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.REQUIRED_VALUE, "您需要指定 columns");
 			}
@@ -518,19 +518,19 @@ public class UnstructuredStorageReaderUtil {
 			if (null != columns && 1 == columns.size()) {
 				String columnsInStr = columns.get(0).toString();
 				if ("\"*\"".equals(columnsInStr) || "'*'".equals(columnsInStr)) {
-					readerConfiguration.set(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.COLUMN, null);
+					readerConfiguration.set(Key.COLUMN, null);
 					columns = null;
 				}
 			}
 	
 			if (null != columns && columns.size() != 0) {
 				for (Configuration eachColumnConf : columns) {
-					eachColumnConf.getNecessaryValue(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.TYPE,
+					eachColumnConf.getNecessaryValue(Key.TYPE,
 							UnstructuredStorageReaderErrorCode.REQUIRED_VALUE);
 					Integer columnIndex = eachColumnConf
-							.getInt(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.INDEX);
+							.getInt(Key.INDEX);
 					String columnValue = eachColumnConf
-							.getString(com.alibaba.datax.plugin.unstructuredstorage.reader.Key.VALUE);
+							.getString(Key.VALUE);
 	
 					if (null == columnIndex && null == columnValue) {
 						throw DataXException.asDataXException(UnstructuredStorageReaderErrorCode.NO_INDEX_VALUE,

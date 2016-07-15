@@ -2,12 +2,11 @@ package com.alibaba.datax.plugin.writer.adswriter.util;
 
 import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.common.util.Configuration;
-import com.alibaba.datax.plugin.writer.adswriter.load.AdsHelper;
 import com.alibaba.datax.plugin.writer.adswriter.AdsWriterErrorCode;
+import com.alibaba.datax.plugin.writer.adswriter.load.AdsHelper;
 import com.alibaba.datax.plugin.writer.adswriter.load.TransferProjectConf;
 import com.alibaba.datax.plugin.writer.adswriter.odps.FieldSchema;
 import com.alibaba.datax.plugin.writer.adswriter.odps.TableMeta;
-import com.alibaba.datax.plugin.writer.odpswriter.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

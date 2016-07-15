@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.codec.binary.Base64;
-
 import com.alibaba.datax.plugin.reader.otsreader.model.OTSColumn;
 import com.alibaba.datax.plugin.reader.otsreader.model.OTSConst;
+import org.apache.commons.codec.binary.Base64;
+
 import com.aliyun.openservices.ots.model.PrimaryKeyValue;
 
 /**

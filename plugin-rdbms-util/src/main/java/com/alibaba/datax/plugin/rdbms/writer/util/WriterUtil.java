@@ -102,7 +102,7 @@ public final class WriterUtil {
                 DBUtil.executeSqlWithoutResultSet(stmt, sql);
             }
         } catch (Exception e) {
-            throw RdbmsException.asQueryException(dataBaseType,e,currentSql,null,null);
+            throw RdbmsException.asQueryException(dataBaseType, e, currentSql, null, null);
         } finally {
             DBUtil.closeDBResources(null, stmt, null);
         }

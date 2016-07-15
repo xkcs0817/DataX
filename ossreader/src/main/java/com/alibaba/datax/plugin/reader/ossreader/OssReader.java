@@ -5,6 +5,7 @@ import com.alibaba.datax.common.plugin.RecordSender;
 import com.alibaba.datax.common.spi.Reader;
 import com.alibaba.datax.common.util.Configuration;
 import com.alibaba.datax.plugin.reader.ossreader.util.OssUtil;
+import com.alibaba.datax.plugin.unstructuredstorage.reader.Constant;
 import com.alibaba.datax.plugin.unstructuredstorage.reader.UnstructuredStorageReaderUtil;
 import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSClient;
@@ -94,7 +95,7 @@ public class OssReader extends Reader {
             String encoding = this.readerOriginConfig
                     .getString(
                             com.alibaba.datax.plugin.unstructuredstorage.reader.Key.ENCODING,
-                            com.alibaba.datax.plugin.unstructuredstorage.reader.Constant.DEFAULT_ENCODING);
+                            Constant.DEFAULT_ENCODING);
             try {
                 Charsets.toCharset(encoding);
             } catch (UnsupportedCharsetException uce) {

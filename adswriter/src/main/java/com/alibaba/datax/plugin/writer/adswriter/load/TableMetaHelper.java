@@ -1,8 +1,8 @@
 package com.alibaba.datax.plugin.writer.adswriter.load;
 
 import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnDataType;
-import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnInfo;
 import com.alibaba.datax.plugin.writer.adswriter.ads.TableInfo;
+import com.alibaba.datax.plugin.writer.adswriter.ads.ColumnInfo;
 import com.alibaba.datax.plugin.writer.adswriter.odps.DataType;
 import com.alibaba.datax.plugin.writer.adswriter.odps.FieldSchema;
 import com.alibaba.datax.plugin.writer.adswriter.odps.TableMeta;

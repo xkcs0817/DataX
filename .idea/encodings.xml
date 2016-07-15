@@ -32,6 +32,7 @@
     <file url="file://$PROJECT_DIR$/sqlserverwriter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/streamreader" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/streamwriter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sybasereader" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/txtfilereader" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/txtfilewriter" charset="UTF-8" />
   </component>

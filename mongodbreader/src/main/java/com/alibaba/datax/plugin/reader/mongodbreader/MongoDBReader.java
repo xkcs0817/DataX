@@ -12,10 +12,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Joiner;
 import com.google.common.base.Strings;
 import com.mongodb.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**

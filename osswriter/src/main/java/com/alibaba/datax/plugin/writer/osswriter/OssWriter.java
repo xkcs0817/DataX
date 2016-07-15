@@ -10,6 +10,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.UUID;
 
+import com.alibaba.datax.plugin.unstructuredstorage.writer.Constant;
+import com.alibaba.datax.plugin.writer.osswriter.util.OssUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.slf4j.Logger;
@@ -21,7 +23,6 @@ import com.alibaba.datax.common.plugin.RecordReceiver;
 import com.alibaba.datax.common.spi.Writer;
 import com.alibaba.datax.common.util.Configuration;
 import com.alibaba.datax.plugin.unstructuredstorage.writer.UnstructuredStorageWriterUtil;
-import com.alibaba.datax.plugin.writer.osswriter.util.OssUtil;
 import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.OSSException;
@@ -29,7 +30,6 @@ import com.aliyun.oss.model.CompleteMultipartUploadRequest;
 import com.aliyun.oss.model.CompleteMultipartUploadResult;
 import com.aliyun.oss.model.InitiateMultipartUploadRequest;
 import com.aliyun.oss.model.InitiateMultipartUploadResult;
-import com.aliyun.oss.model.ListObjectsRequest;
 import com.aliyun.oss.model.OSSObjectSummary;
 import com.aliyun.oss.model.ObjectListing;
 import com.aliyun.oss.model.PartETag;
@@ -252,7 +252,7 @@ public class OssWriter extends Writer {
             this.encoding = this.writerSliceConfig
                     .getString(
                             com.alibaba.datax.plugin.unstructuredstorage.writer.Key.ENCODING,
-                            com.alibaba.datax.plugin.unstructuredstorage.writer.Constant.DEFAULT_ENCODING);
+                            Constant.DEFAULT_ENCODING);
             this.fieldDelimiter = this.writerSliceConfig
                     .getChar(
                             com.alibaba.datax.plugin.unstructuredstorage.writer.Key.FIELD_DELIMITER,

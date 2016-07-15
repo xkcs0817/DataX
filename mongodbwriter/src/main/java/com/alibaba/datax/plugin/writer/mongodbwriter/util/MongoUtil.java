@@ -4,8 +4,6 @@ import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.common.util.Configuration;
 import com.alibaba.datax.plugin.writer.mongodbwriter.KeyConstant;
 import com.alibaba.datax.plugin.writer.mongodbwriter.MongoDBWriterErrorCode;
-import com.google.common.base.Splitter;
-import com.google.common.base.Strings;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
@@ -14,8 +12,6 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.regex.Pattern;
 
 /**
  * Created by jianying.wcj on 2015/3/17 0017.

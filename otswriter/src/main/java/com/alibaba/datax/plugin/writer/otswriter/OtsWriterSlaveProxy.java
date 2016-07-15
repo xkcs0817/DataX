@@ -1,6 +1,9 @@
 package com.alibaba.datax.plugin.writer.otswriter;
 
-import com.alibaba.datax.plugin.writer.otswriter.model.*;
+import com.alibaba.datax.plugin.writer.otswriter.model.OTSConf;
+import com.alibaba.datax.plugin.writer.otswriter.model.OTSConst;
+import com.alibaba.datax.plugin.writer.otswriter.model.OTSErrorMessage;
+import com.alibaba.datax.plugin.writer.otswriter.model.WithRecord;
 import com.alibaba.datax.plugin.writer.otswriter.utils.Common;
 import com.aliyun.openservices.ots.*;
 import com.aliyun.openservices.ots.internal.OTSCallback;

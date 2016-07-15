@@ -5,8 +5,8 @@ import com.alibaba.datax.common.util.Configuration;
 import com.alibaba.datax.common.util.RetryUtil;
 import com.alibaba.datax.plugin.writer.odpswriter.Constant;
 import com.alibaba.datax.plugin.writer.odpswriter.Key;
-
 import com.alibaba.datax.plugin.writer.odpswriter.OdpsWriterErrorCode;
+
 import com.aliyun.odps.*;
 import com.aliyun.odps.account.Account;
 import com.aliyun.odps.account.AliyunAccount;

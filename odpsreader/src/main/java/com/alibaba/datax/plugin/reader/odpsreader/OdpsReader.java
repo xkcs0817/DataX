@@ -6,8 +6,8 @@ import com.alibaba.datax.common.spi.Reader;
 import com.alibaba.datax.common.util.Configuration;
 import com.alibaba.datax.common.util.FilterUtil;
 import com.alibaba.datax.plugin.reader.odpsreader.util.IdAndKeyUtil;
-import com.alibaba.datax.plugin.reader.odpsreader.util.OdpsSplitUtil;
 import com.alibaba.datax.plugin.reader.odpsreader.util.OdpsUtil;
+import com.alibaba.datax.plugin.reader.odpsreader.util.OdpsSplitUtil;
 import com.aliyun.odps.*;
 import com.aliyun.odps.tunnel.TableTunnel.DownloadSession;
 

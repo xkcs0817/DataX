@@ -33,6 +33,7 @@
       <module fileurl="file://$PROJECT_DIR$/sqlserverwriter/sqlserverwriter.iml" filepath="$PROJECT_DIR$/sqlserverwriter/sqlserverwriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamreader/streamreader.iml" filepath="$PROJECT_DIR$/streamreader/streamreader.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamwriter/streamwriter.iml" filepath="$PROJECT_DIR$/streamwriter/streamwriter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sybasereader/sybasereader.iml" filepath="$PROJECT_DIR$/sybasereader/sybasereader.iml" />
       <module fileurl="file://$PROJECT_DIR$/txtfilereader/txtfilereader.iml" filepath="$PROJECT_DIR$/txtfilereader/txtfilereader.iml" />
       <module fileurl="file://$PROJECT_DIR$/txtfilewriter/txtfilewriter.iml" filepath="$PROJECT_DIR$/txtfilewriter/txtfilewriter.iml" />
     </modules>

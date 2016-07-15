@@ -71,7 +71,7 @@ public class AdsHelper {
      * 
      * @param table The table
      * @return The table meta information
-     * @throws com.alibaba.datax.plugin.writer.adswriter.AdsException
+     * @throws AdsException
      */
     public TableInfo getTableInfo(String table) throws AdsException {
 

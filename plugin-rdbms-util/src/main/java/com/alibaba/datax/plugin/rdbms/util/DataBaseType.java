@@ -16,7 +16,7 @@ public enum DataBaseType {
     Oracle("oracle", "oracle.jdbc.OracleDriver"),
     SQLServer("sqlserver", "com.microsoft.sqlserver.jdbc.SQLServerDriver"),
     PostgreSQL("postgresql", "org.postgresql.Driver"),
-    Sybase("sybase", "com.sybase.jdbc2.jdbc.SybDriver (com.sybase.jdbc3.jdbc.SybDriver)"),
+    Sybase("sybase", "com.sybase.jdbc2.jdbc.SybDriver"),
     DB2("db2", "com.ibm.db2.jcc.DB2Driver"),
     ADS("ads","com.mysql.jdbc.Driver");
 
@@ -55,6 +55,8 @@ public enum DataBaseType {
                 break;
             case PostgreSQL:
             	break;
+            case Sybase:
+                break;
             default:
                 throw DataXException.asDataXException(DBUtilErrorCode.UNSUPPORTED_TYPE, "unsupported database type.");
         }
@@ -113,6 +115,7 @@ public enum DataBaseType {
                 }
                 break;
             case DB2:
+            case Sybase:
             case PostgreSQL:
             	break;
             default:
@@ -136,6 +139,7 @@ public enum DataBaseType {
                 result = "[" + columnName + "]";
                 break;
             case DB2:
+            case Sybase:
             case PostgreSQL:
                 break;
             default:
@@ -157,6 +161,8 @@ public enum DataBaseType {
             case SQLServer:
                 break;
             case DB2:
+                break;
+            case Sybase:
                 break;
             case PostgreSQL:
                 break;

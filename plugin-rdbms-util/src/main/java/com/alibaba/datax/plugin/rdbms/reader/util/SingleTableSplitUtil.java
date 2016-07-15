@@ -3,8 +3,8 @@ package com.alibaba.datax.plugin.rdbms.reader.util;
 import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.common.util.Configuration;
 import com.alibaba.datax.plugin.rdbms.reader.Constant;
-import com.alibaba.datax.plugin.rdbms.reader.Key;
 import com.alibaba.datax.plugin.rdbms.util.*;
+import com.alibaba.datax.plugin.rdbms.reader.Key;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
@@ -162,7 +162,7 @@ public class SingleTableSplitUtil {
             try {
                 rs = DBUtil.query(conn, pkRangeSQL, fetchSize);
             }catch (Exception e) {
-                throw RdbmsException.asQueryException(DATABASE_TYPE, e, pkRangeSQL,table,username);
+                throw RdbmsException.asQueryException(DATABASE_TYPE, e, pkRangeSQL, table, username);
             }
             ResultSetMetaData rsMetaData = rs.getMetaData();
             if (isPKTypeValid(rsMetaData)) {
