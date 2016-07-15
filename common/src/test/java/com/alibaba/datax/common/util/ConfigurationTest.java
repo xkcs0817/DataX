@@ -11,7 +11,7 @@ import org.junit.rules.ExpectedException;
 
 import java.util.*;
 
-public class  ConfigurationTest {
+public class ConfigurationTest {
 
 	@Test
 	public void test_get() {
